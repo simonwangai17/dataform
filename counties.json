@@ -1,0 +1,15 @@
+{
+    "status": "success",
+    "message": "Successfully fetched counties",
+    "data": [
+        {
+            "county": "Nairobi",
+            "subcounties": ["Westlands", "Lang'ata", "Embakasi", "Kasarani"]
+        },
+        {
+            "county": "Mombasa",
+            "subcounties": ["Mvita", "Kisauni", "Nyali", "Likoni"]
+        },
+        // More counties and subcounties
+    ]
+}
