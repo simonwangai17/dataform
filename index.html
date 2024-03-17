@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Client Form</h2>
+        <form id="client-form" method="post" action="submit.php">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="surname">Surname:</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="idNumber">ID Number:</label>
+            <input type="text" id="idNumber" name="idNumber" required>
+
+            <label for="county">County:</label>
+            <select id="county" name="county" required>
+                <option value="" disabled selected>Select County</option>
+                <!-- Populate with counties in Kenya -->
+                <option value="nairobi">Nairobi</option>
+                <option value="mombasa">Mombasa</option>
+                <!-- Add more counties as needed -->
+            </select>
+
+            <label for="subcounty">Subcounty:</label>
+            <select id="subcounty" name="subcounty" required>
+                <option value="" disabled selected>Select Subcounty</option>
+                <!-- Subcounties will be populated dynamically based on selected county -->
+            </select>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="village">Village:</label>
+            <input type="text" id="village" name="village" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" required>
+
+            <label for="paymentProof">Payment Proof (Mpesa Transaction Code):</label>
+            <input type="text" id="paymentProof" name="paymentProof" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
